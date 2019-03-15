@@ -1,14 +1,17 @@
 require('dotenv').config();
 
+const DeadDrop = require('./build/contracts/DeadDrop.json');
+const DeadDropOracle = require('./build/contracts/DeadDropOracle.json');
+
 const Web3 = require('web3');
 
 const web3 = new Web3(new Web3.providers.HttpProvider(process.env.WEB3_HTTP_PROVIDER_ADDRESS));
 
-const oracleAbi = JSON.parse(process.env.ORACLE_ABI);
+const oracleAbi = DeadDrop.abi;
 const oracleAddress = process.env.ORACLE_ADDRESS;
 const oracleContract = new web3.eth.Contract(oracleAbi, oracleAddress);
 
-const contractAbi = JSON.parse(process.env.CONTRACT_ABI);
+const contractAbi = DeadDropOracle.abi;
 const contractAddress = process.env.CONTRACT_ADDRESS;
 const contractContract = new web3.eth.Contract(contractAbi, contractAddress);
 

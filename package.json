@@ -1,0 +1,28 @@
+{
+  "name": "hello-ethereum-oracle",
+  "version": "0.0.1",
+  "description": "Example app showcasing LaunchDarkly feature flags on the Ethereum blockchain",
+  "main": "oracle.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/launchdarkly/hello-ethereum-oracle.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/launchdarkly/hello-ethereum-oracle/issues"
+  },
+  "homepage": "https://github.com/launchdarkly/hello-ethereum-oracle#readme",
+  "dependencies": {
+    "dotenv": "^7.0.0",
+    "ldclient-node": "^5.7.2",
+    "truffle-hdwallet-provider": "^1.0.5",
+    "web3": "^1.0.0-beta.37"
+  }
+}

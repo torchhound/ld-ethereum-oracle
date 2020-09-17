@@ -21,7 +21,7 @@ contract('LaunchDarkly', accounts => {
 		});
 	});
 
-  	it('should be able to put feature flag and get dead drop data', async () => {
+  	it('should be able to put feature flag and get dead drop data', () => {
   		DeadDropOracle.deployed()
 			.then(instance => instance.setFeatureFlag(featureFlag).send(process.env.ORACLE_ADDRESS))
 			.then(() => {

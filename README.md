@@ -12,7 +12,7 @@ NOTE: `web3` is specifically `1.0.0-beta.37`, newer beta versions have critical 
 
 ## Run
 
-You'll need Ganache or `ganache-cli` running. If you use `ganache-cli` put int in a separate bash tab or background it.
+You'll need Ganache or `ganache-cli` running. If you use `ganache-cli` put it in a separate bash tab or background it.
 
 `truffle compile`
 
